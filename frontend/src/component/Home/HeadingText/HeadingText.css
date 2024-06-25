@@ -1,0 +1,21 @@
+.HeadingText {
+    color: black;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+.h2-Heading {
+    margin: 15px 0;
+}
+
+
+.span-Heading::before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 4rem;
+    background: #e94560;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}

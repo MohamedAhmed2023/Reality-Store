@@ -1,0 +1,42 @@
+.Sale-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.Sale-parent span {
+    font-weight: bold;
+
+}
+
+.Sale {
+    display: flex;
+    padding: 5px;
+    margin: 20px 0;
+    border: 2px solid #eee;
+}
+
+.Sale-left {
+    margin-top: 20px;
+}
+
+.Sale-right {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.Sale-right span {
+    color: #e94560;
+}
+
+.Sale-right p {
+    margin: 15px 0;
+}
+
+@media(max-width:992px) {
+    .Sale-container {
+        display: flex;
+        flex-direction: column;
+    }
+}

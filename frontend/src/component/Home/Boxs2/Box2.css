@@ -1,0 +1,136 @@
+.container-box2 {
+    width: 80%;
+    margin: auto;
+}
+
+.parent-image {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    gap: 40px;
+}
+
+.parent-image img {
+    width: 100% !important;
+}
+
+
+/* shop */
+.content-shop {
+    margin: 50px 0;
+}
+
+.content-shop h2 {
+    text-align: center;
+    font-size: 25px;
+    margin: 15px 0 !important;
+}
+
+.container-shop {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.shop {
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+}
+
+.shop p {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* mac */
+.contect-mac {
+    margin-top: 50px;
+}
+
+.container-mac {
+    width: 80%;
+    margin: auto;
+    background-color: #F2F4F5;
+}
+
+.mac {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+}
+
+.mac-left {
+    margin-top: 100px;
+}
+
+.mac-left span {
+    background-color: #2DA5F3;
+    padding: 2px 5px;
+    margin: 10px 0;
+    color: #fff;
+    font-weight: 600;
+}
+
+.mac-left h4 {
+    font-size: 45px;
+    margin: 20px 0;
+
+}
+
+.mac-left p {
+    color: #191C1F;
+    font-size: 20px;
+}
+
+.mac-left button {
+    margin: 25px 0;
+    padding: 15px 35px;
+    background-color: #e94560;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+@media (max-width:992px) {
+    .parent-image {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+        gap: 10px;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .container-shop {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shop {
+        text-align: center;
+    }
+
+    .mac {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .mac-right img {
+        width: 100%;
+    }
+}

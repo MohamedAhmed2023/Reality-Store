@@ -1,0 +1,165 @@
+.inputBox>span {
+  font-family: "Roboto";
+  animation: sliding 14s linear infinite;
+  display: block;
+  color: #fff;
+}
+
+@keyframes sliding {
+  0% {
+    transform: translateX(-70%);
+  }
+
+  100% {
+    transform: translateX(130%);
+  }
+}
+
+.Header {
+  width: 80%;
+}
+
+.navbar {
+  width: 80% !important;
+  margin: auto;
+}
+
+.logo {
+  padding: 10px 0;
+  /* font-family: "Edu TAS Beginner", cursive;
+  font-optical-sizing: auto;
+  font-style: italic; */
+  font-size: 30px;
+  font-weight: 1000;
+  color: black;
+
+
+}
+
+.logo span {
+  /* font-family: "Edu TAS Beginner", cursive;
+  font-optical-sizing: auto;
+  font-style: italic; */
+  color: #e94560;
+}
+
+/* upper-nav */
+
+.upper-nav {
+  padding: 15px;
+  background-color: #e94560;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 55px;
+
+}
+
+.nav-left, .nav-right {
+  display: flex;
+}
+
+.nav-left select {
+  font-size: 15px;
+  background-color: transparent;
+  color: #fff;
+  margin: 0 5px;
+  outline: none;
+  border: none;
+
+}
+
+
+select option {
+  background-color: #fff;
+  color: black;
+  border-radius: 0;
+  padding: 80px 15px;
+}
+
+:focus {
+  outline: none;
+  border-color: #e94560;
+}
+
+.nav-left p {
+  padding: 6px 12px;
+  font-weight: 500;
+  margin-left: 10px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-right p {
+  padding: 4px 12px;
+  font-weight: 500;
+  margin-left: 10px;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.icon-upperNav span {
+  margin: 0 5px;
+  font-size: 10px;
+}
+
+@media (max-width:992px) {
+  .upper-nav, .navbar {
+    display: none;
+  }
+}
+
+.inputBox {
+  display: flex;
+  alignItems: center;
+  height: 20px;
+  width: 600px;
+  background: #fff;
+  color: #e94560;
+  padding: 5px;
+
+}
+
+.inputBox span {
+  color: #e94560;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar.activeP {
+  background-color: #e9456060;
+  color: #fff !important;
+  position: fixed;
+  width: 100% !important;
+  z-index: 100000;
+  top: 0;
+
+  padding: 0 20px;
+
+  ul li {
+    color: #fff;
+  }
+
+  .rightOption {
+    display: none;
+  }
+
+  .logo {
+    color: #fff;
+
+  }
+
+  .logo span {
+    color: white;
+  }
+}
+
+.navbar {
+  transition: background-color 0.2s ease;
+}
+
+.navbar.activeP {
+  background-color: #e94560;
+  color: #fff !important;
+}
