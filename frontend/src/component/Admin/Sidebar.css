@@ -1,0 +1,64 @@
+.sidebar {
+  background-color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100vh;
+  padding: 10px;
+}
+
+.sidebar>a:first-child {
+  padding: 0;
+}
+
+
+.sidebar a {
+  text-decoration: none;
+  color: black;
+  font: 200 1rem "Roboto";
+  /* padding: 1.8rem 1.2rem; */
+  padding: 20px 35px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.sidebar a:hover {
+  background-color: #5D5FEF;
+  color: white;
+  /* padding: 1.8rem 1.2rem; */
+  /* transition: all 0.2s; */
+
+}
+
+.sidebar a>P {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar a>p>svg {
+  margin-right: 0.5rem;
+}
+
+.MuiTypography-root {
+  background-color: #fff !important;
+}
+
+.MuiTypography-root.MuiTreeItem-label.MuiTypography-body1 {
+  color: #999;
+}
+
+.logo-dash {
+  font-size: 30px;
+  font-weight: 1000;
+  color: black;
+  margin-left: 15px;
+  margin-top: 50px;
+  padding: 20px 0;
+}
+
+.logo-dash span {
+  color: #5D5FEF;
+}

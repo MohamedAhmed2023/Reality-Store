@@ -1,0 +1,153 @@
+.dashboard {
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  position: absolute;
+
+}
+
+.dashboardContainer {
+  border-left: 1px solid rgba(0, 0, 0, 0.13);
+  background-color: rgb(248, 248, 248);
+}
+
+.dashboardContainer>h1 {
+  color: rgba(0, 0, 0, 0.733);
+  font: 300 2rem "Roboto";
+  text-align: center;
+  width: 50%;
+  padding: 1.5rem;
+  margin: auto;
+  background-color: #5D5FEF;
+}
+
+.dashboardSummary {
+  margin: 2rem 0;
+}
+
+.dashboardSummary>div {
+  display: flex;
+  justify-content: center;
+}
+
+.dashboardSummary>div>p {
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  width: 72%;
+  margin: 0 2rem;
+  background-color: #FFFF;
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.dashboardSummaryBox2>a {
+  color: rgb(0, 0, 0);
+  font: 300 2rem "Roboto";
+  text-align: center;
+  background-color: #5D5FEF;
+  text-decoration: none;
+  padding: 1.5rem;
+  width: 15vmax;
+  height: 10vmax;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.icon-dash svg {
+  font-size: 40px;
+}
+
+/* .dashboardSummaryBox2>a:first-child {
+  background-color: rgb(255, 110, 110);
+  color: rgb(255, 255, 255);
+  background-color: #5D5FEF;
+  color: #fff;
+}
+
+.dashboardSummaryBox2>a:last-child {
+  background-color: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+  background-color: #5D5FEF;
+  color: #fff;
+} */
+
+.lineChart {
+  width: 80%;
+  margin: auto;
+  color: #5D5FEF;
+}
+
+.doughnutChart {
+  width: 30vmax;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboardContainer {
+    border-left: none;
+  }
+
+  .dashboardSummary>div>p {
+    margin: 0;
+  }
+
+  .dashboardSummaryBox2>a {
+    padding: 0.5rem;
+    margin: 1rem;
+    font: 300 0.9rem "Roboto";
+  }
+}
+
+.navBar-dash {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: white;
+}
+
+.dash-left p {
+  font-size: 22px;
+  color: black;
+  font-weight: 800;
+}
+
+.dash-right span {
+  margin: 0 5px;
+  color: #5D5FEF;
+  font-size: 17px !important;
+  width: 50px !important;
+  cursor: pointer;
+}
+
+.dash-right span svg {
+
+  font-size: 30px !important;
+
+}
+
+
+.center-dash input {
+  width: 600px;
+  padding: 10px;
+  background-color: rgb(248, 248, 248);
+  border: 1px solid #ccc;
+  color: black;
+  border-radius: 10px;
+}
+
+.totalAmount {
+  color: #5D5FEF;
+}
