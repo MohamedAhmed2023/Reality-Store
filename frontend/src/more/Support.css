@@ -1,0 +1,29 @@
+.support-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 0 200px;
+    margin: 70px 0;
+}
+
+.support-left img {
+    display: flex;
+    width: 450px;
+}
+
+
+.animation {
+    display: none;
+}
+
+@media(max-width:992px) {
+    .support-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .support-left img {
+        display: none;
+
+    }
+}
